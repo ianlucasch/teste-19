@@ -11,13 +11,17 @@ tables = camelot.read_pdf(
     path,
     pages="1-end",
     flavor="stream",
-    table_areas=[""]
+    table_areas=["65, 568, 500, 298"],
+    columns=["65, 107, 156, 212, 280, 336, 383, 450"],
+    strip_text=" .\n"
 )
 
 print(tables[0].parsing_report)
 
-camelot.plot(tables[0], kind="contour")
+# camelot.plot(tables[0], kind="contour")
 
-plt.show()
+# plt.show()
+
+print(tables[0].df)
 
 print("Pause")

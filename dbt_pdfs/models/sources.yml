@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: automacao_pdfs
+    schema: public
+    description: Dados que vieram do backend
+    tables:
+      - name: fatura_jornada
+      - name: fatura_jornada_small
+      - name: fatura_redrex
+      - name: fatura_redrex_small

@@ -1,6 +1,6 @@
 WITH formatted AS (
     SELECT
-        "n_nota" AS n_nota,
+        CAST("n_nota" AS INT) AS n_nota,
         "cv",
         "merc",
         "tipo",
